@@ -1,0 +1,15 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.torso{
+    width: 100%;
+}
+
+@media (min-width: 768px) { /* A partir de 768px de ancho de pantalla */
+    .torso {
+      height: 50%;
+      width: 50%; /* Mitad de ancho en ordenador */
+    }
+  }
