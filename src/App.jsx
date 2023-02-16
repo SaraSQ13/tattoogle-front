@@ -7,6 +7,7 @@ import { Home } from "./container/Home/Home";
 import Login from "./container/Login/Login";
 import Register from "./container/Register/Register";
 import TattoersList from "./container/TattoersList/TattoersList";
+import StudiosList from "./container/StudiosList/StudiosList";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tattoers" element={<TattoersList />} />
+          <Route path="/studios" element={<StudiosList/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
