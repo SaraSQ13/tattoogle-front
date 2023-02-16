@@ -27,7 +27,7 @@ export default function NavBar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink
-                className="nav-link active"
+                className="nav-link "
                 aria-current="page"
                 to="/tattoers"
               >
@@ -41,7 +41,7 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                className="nav-link active"
+                className="nav-link"
                 to="/login"
                 tabIndex="-1"
                 aria-disabled="true"
