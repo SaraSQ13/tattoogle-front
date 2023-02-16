@@ -8,6 +8,7 @@ import Login from "./container/Login/Login";
 import Register from "./container/Register/Register";
 import TattoersList from "./container/TattoersList/TattoersList";
 import StudiosList from "./container/StudiosList/StudiosList";
+import Admin from "./container/Admin/Admin";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/studios" element={<StudiosList/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/admin" element={<Admin/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
