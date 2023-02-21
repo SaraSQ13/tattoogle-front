@@ -9,8 +9,8 @@ TattoerService.getAllTattoers = async () => {
   return apiUrl.data.data;
 };
 
-TattoerService.getSingleTattoer = async (id) => {
-  const apiUrl = `${enviroment.BASE_API_URL}/tattoers/${id}`;
+TattoerService.getSingleTattoer = async (name) => {
+  const apiUrl = `${enviroment.BASE_API_URL}/tattoers/${name}`;
   const res = await axios.get(apiUrl);
 
   return res;
