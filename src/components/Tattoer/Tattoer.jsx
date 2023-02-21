@@ -1,6 +1,7 @@
 import "./Tattoer.scss";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import foto from "../../assets/foto-prueba.jpg";
 
 export default function Tattoer({ tattoer }) {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function Tattoer({ tattoer }) {
 
   return (
     <div className="card" >
-      <img src="..." className="card-img-top" alt="Foto del artista" />
+      <img src={foto} className="card-img-top" alt="Foto del artista" />
       <div className="card-body">
         <h5 className="card-title">{tattoer.tattoer_name}</h5>
       </div>

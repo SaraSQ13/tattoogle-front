@@ -1,6 +1,7 @@
 import "./Studio.scss";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import foto from "../../assets/foto-prueba.jpg";
 
 export default function Studio({ studio }) {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function Studio({ studio }) {
 
   return (
     <div className="card" >
-      <img src="..." className="card-img-top" alt="Foto del artista" />
+      <img src={foto} className="card-img-top" alt="Foto del artista" />
       <div className="card-body">
         <h5 className="card-title">{studio.studio_name}</h5>
       </div>
