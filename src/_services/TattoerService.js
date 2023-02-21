@@ -6,6 +6,7 @@ export const TattoerService = {};
 TattoerService.getAllTattoers = async () => {
   const apiUrl = await axios.get(`${enviroment.BASE_API_URL}/tattoers`);
 
+  console.log(apiUrl);
   return apiUrl.data.data;
 };
 
