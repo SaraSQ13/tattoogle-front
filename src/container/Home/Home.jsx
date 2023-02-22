@@ -6,7 +6,10 @@ export function Home() {
     return (
         <div className="home">
         <img className="torso" src={background} alt="tatoo-torso" />
-        <h1>hola</h1>
+        <h1>¡Encuentra al artista perfecto!</h1>
+        <h3>Elige cómo buscarlx:</h3>
+        
+        
       </div>
     )
 }

@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 export default function Login() {
   //hooks
   const navigate = useNavigate();
-  // navigate("/login");
+  
 
   return (
     <div>

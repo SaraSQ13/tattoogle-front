@@ -17,9 +17,9 @@ export default function Tattoer({ tattoer }) {
         <h5 className="card-title">{tattoer.tattoer_name}</h5>
       </div>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">{tattoer.city}</li>
-        <li className="list-group-item">{tattoer.style}</li>
-        <li className="list-group-item">A third item</li>
+        <li className="  list-group-item">{tattoer.city}</li>
+        <li className="  list-group-item">{tattoer.style}</li>
+        
       </ul>
       <div className="card-body">
         <a href="#" className="card-link">
