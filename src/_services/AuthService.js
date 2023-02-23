@@ -12,6 +12,7 @@ AuthService.login = async (credentials) => {
 };
 
 AuthService.register = async (user) => {
+  console.log("user", user)
   return await axios.post(authApiUrl + "/register", {
     name: user.name,
     lastname: user.lastname,

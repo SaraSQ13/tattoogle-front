@@ -15,25 +15,25 @@ export default function Register() {
 
   //hooks
   const navigate = useNavigate();
-  const [formValues, setFormValues] = useState("");
+  const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
-  useEffect(() => {
-    const credentials = {
-      email: formValues.email,
-      password: formValues.password,
-      name: formValues.name,
-      lastname: formValues.lastname,
-    };
-
-    //verificar que no hay error
-    if (Object.keys(formErrors).length == 0 && isSubmit) {
-      console.log("LOGIN...");
-      register(credentials);
-    }
-    console.log("useEffect", formErrors);
-  }, [formErrors]);
+  // useEffect(() => {
+  //   const credentials = {
+  //     email: formValues.email,
+  //     password: formValues.password,
+  //     name: formValues.name,
+  //     lastname: formValues.lastname,
+  //   };
+//
+  //   //verificar que no hay error
+  //   if (Object.keys(formErrors).length == 0 && isSubmit) {
+  //     console.log("LOGIN...");
+  //     register(credentials);
+  //   }
+  //   console.log("useEffect", formErrors);
+  // }, [formErrors]);
 
   const register = async (credentials) => {
     try {
@@ -48,6 +48,7 @@ export default function Register() {
 
   //handlers
   const handleChange = (e) => {
+    e.preventDefault();
     const { name, value } = e.target;
     setFormValues({
       ...formValues,
@@ -59,6 +60,7 @@ export default function Register() {
     e.preventDefault();
     setFormErrors(validateLoginFormValues(formValues));
     setIsSubmit(true);
+    register(formValues);
   };
 
   return (
@@ -66,7 +68,7 @@ export default function Register() {
       <div className="container pt-5 col-lg m-auto">
         <h2>Registro</h2>
 
-        <form className="text-start" onSubmit={handleSubmit}>
+        <form className="text-start" noValidate onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label">Nombre</label>
             <input
@@ -79,7 +81,7 @@ export default function Register() {
             <label className="form-label">Apellido</label>
             <input
               type="text"
-              name="name"
+              name="lastname"
               className="form-control"
               value={formValues.lastname}
               onChange={handleChange}

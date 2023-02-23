@@ -16,7 +16,7 @@ UserService.getAllUsers = async (token) => {
 
 UserService.getTattoersFromUser = async (name) => {
   const apiUrl = `${enviroment.BASE_API_URL}/users/${name}`;
-  const res = await axios.get(apiUrl);
+  const res = await axios.get(apiUrl); 
   return res.data;
 };
 
