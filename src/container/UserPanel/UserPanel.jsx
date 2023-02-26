@@ -15,7 +15,7 @@ export default function UserPanel() {
   useEffect(() => {
     if (isLoggedIn) {
       try {
-        UserService.getTattoersFromUser(user.tattoer_name).then((res) => {
+        UserService.getTattoersFromUser(user).then((res) => {
           console.log(res.data.tattoers);
           dispatch(updateTattoers([...res.data.tattoers]));
         });

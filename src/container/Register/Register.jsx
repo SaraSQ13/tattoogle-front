@@ -64,9 +64,9 @@ export default function Register() {
   };
 
   return (
-    <div>
+    <div className="container">
+        <h2>REGISTRO</h2>
       <div className="container pt-5 col-lg m-auto">
-        <h2>Registro</h2>
 
         <form className="text-start" noValidate onSubmit={handleSubmit}>
           <div className="mb-3">

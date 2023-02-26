@@ -14,8 +14,8 @@ UserService.getAllUsers = async (token) => {
   return await axios.get(apiUrl, config);
 };
 
-UserService.getTattoersFromUser = async (name) => {
-  const apiUrl = `${enviroment.BASE_API_URL}/users/${name}`;
+UserService.getTattoersFromUser = async (tattoer) => {
+  const apiUrl = `${enviroment.BASE_API_URL}/users/${tattoer._id}`;
   const res = await axios.get(apiUrl); 
   return res.data;
 };
@@ -31,9 +31,9 @@ UserService.deleteUser = async (user) => {
   }
 };
 
-UserService.saveTattoer = async (userId, tattoer) => {
+UserService.saveTattoer = async (user, tattoer) => {
   try {
-    const apiUrl = `${enviroment.BASE_API_URL}/users/${userId}/save`;
+    const apiUrl = `${enviroment.BASE_API_URL}/users/${user._id}/save`;
     const res = await axios.patch(apiUrl, tattoer);
 
     return res.data;

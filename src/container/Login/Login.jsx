@@ -47,7 +47,7 @@ export default function Login() {
       if (res.data.user.role == "super_admin") {
         navigate("/admin");
       } else if (res.data.user.role == "user") {
-        navigate("/tattoers");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
@@ -70,9 +70,9 @@ export default function Login() {
   };
 
   return (
-    <div>
+    <div className="container">
+        <h2>LOGIN</h2>
       <div className="container pt-5 col-lg-3">
-        <h2>Login</h2>
         <form className="text-start" noValidate onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label">Email</label>

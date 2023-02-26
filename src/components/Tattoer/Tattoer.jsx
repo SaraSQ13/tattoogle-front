@@ -31,9 +31,9 @@ export default function Tattoer({ tattoer }) {
       </ul>
       <div className="card-body">
         <button className="button" type="submit" onClick={handleSaveTattoer}>Guardar</button>
-        <a href="#" className="card-link">
+        {/* <a href="#" className="card-link">
           Another link
-        </a>
+        </a> */}
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+.container-admin {
+    display: flex;
+    flex-direction: column;
+   gap: 3em;
+}
+
+.card-admin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}

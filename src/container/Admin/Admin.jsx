@@ -39,9 +39,10 @@ export default function Admin() {
   };
 
   return (
-    <div className="container">
+    <div className="container-admin">
       <h1>Admin</h1>
       {users.map((user) => (
+        <div className="card-admin">
         <div className="card" key={user._id}>
           <div className="card-body">
             <h5 className="card-title">Usuario: {user.name}</h5>
@@ -51,6 +52,7 @@ export default function Admin() {
             <li className="  list-group-item">Rol: {user.role}</li>
           </ul>
           <button onClick={() => handleDeleteUser(user._id)}>Eliminar</button>
+        </div>
         </div>
       ))}
     </div>

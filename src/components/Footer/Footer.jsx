@@ -41,9 +41,7 @@ export function Footer() {
                 Tattoogle
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+               Descubre a todxs lxs artistas del tatuaje a nivel nacional y encuentra alert/la mejor para ti.
               </p>
             </MDBCol>
 

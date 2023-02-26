@@ -23,49 +23,6 @@ export default function TattoersList() {
 
   return (
     <div className="container">
-      {/* <select
-        className="form-select form-select-lg mb-3"
-        aria-label=".form-select-lg example"
-      >
-        <option defaultValue>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-
-      <div className="form-check">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckDefault"
-        />
-        <label className="form-check-label" htmlFor="flexCheckDefault">
-          Default checkbox
-        </label>
-      </div>
-      <div className="form-check">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckChecked"
-          checked
-        />
-        <label className="form-check-label" htmlFor="flexCheckChecked">
-          Checked checkbox
-        </label>
-      </div>
-
-      <select
-        className="form-select form-select-sm"
-        aria-label=".form-select-sm example"
-      >
-        <option defaultValue>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select> */}
       <h1>ARTISTAS</h1>
       <div className= "tattoer-list">
       {tattoers.length > 0 &&
