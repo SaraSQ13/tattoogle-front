@@ -47,7 +47,7 @@ export default function Login() {
       if (res.data.user.role == "super_admin") {
         navigate("/admin");
       } else if (res.data.user.role == "user") {
-        navigate("/tattoer");
+        navigate("/tattoers");
       }
     } catch (error) {
       console.log(error);

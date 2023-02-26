@@ -31,4 +31,16 @@ UserService.deleteUser = async (user) => {
   }
 };
 
+UserService.saveTattoer = async (userId, tattoer) => {
+  try {
+    const apiUrl = `${enviroment.BASE_API_URL}/users/${userId}/save`;
+    const res = await axios.patch(apiUrl, tattoer);
+
+    return res.data;
+  } catch (error) {
+    console.log(error);
+    
+  }
+}
+
 export default UserService;
